@@ -319,39 +319,4 @@ def game():
 window.mainloop()
 
 
-# def launch_game_window():
-#     root=CTk()
-#     root.geometry("710x480")
-#     root.resizable(0,0)
-#     root.config(bg="lavenderblush2")
 
-#     def game_destroy():
-#         game_thread= threading.Thread(target=game) #Create the thread for the game
-#         game_thread.start()
-#     root.destroy() 
-
-#     img0 = Image.open("text.png")
-#     img1 = Image.open("start_btn.png")
-#     img2 = Image.open("exit_btn.png")
-
-#     resized_img0 = img0.resize((250, 120), Image.ANTIALIAS)
-#     resized_img1 = img1.resize((130, 90), Image.ANTIALIAS)
-#     resized_img2 = img2.resize((130, 90), Image.ANTIALIAS)
-
-#     img0_obj= ImageTk.PhotoImage(resized_img0)
-#     button_header = CTkLabel(root, image=img0_obj, text=" ")
-#     button_header.place(x = 270, y = 10)
-
-
-#     img1_obj = ImageTk.PhotoImage(resized_img1)
-#     img2_obj = ImageTk.PhotoImage(resized_img2)
-
-#     button1 = CTkButton(root, image=img1_obj, command=game_destroy, text=" ")
-#     button1.place(x=105, y=210)
-#     button2 = CTkButton(root, image=img2_obj, text=" ",command=root.destroy)
-#     button2.place(x=490, y=210)
-
-#     root.mainloop()
-
-# def launch_game():
-#     game()
